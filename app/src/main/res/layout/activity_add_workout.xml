@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/workoutName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Exercise Name" />
+
+    <EditText
+        android:id="@+id/workoutMuscleGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Muscle Group" />
+
+    <!-- Spinner for Type -->
+    <Spinner
+        android:id="@+id/workoutType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Spinner for Difficulty -->
+    <Spinner
+        android:id="@+id/workoutDifficulty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/workoutSets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sets"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/workoutReps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Reps" />
+
+    <Button
+        android:id="@+id/saveWorkoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Workout" />
+</LinearLayout>

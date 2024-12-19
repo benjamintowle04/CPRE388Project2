@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/navy">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="150dp"
+        android:textSize="30dp"
+        android:textColor="@color/Gold">
+    </TextView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NetID: "
+            android:textColor="@color/Gold"
+            android:textSize="20dp"></TextView>
+
+
+        <EditText
+            android:id="@+id/forgot_username_edt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Username Here"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="password: "
+            android:textSize="20dp"
+            android:textColor="@color/Gold">
+        </TextView>
+
+
+        <EditText
+            android:id="@+id/forgot_password_edt"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Enter Password Here">
+        </EditText>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70sp"
+            android:text="confirm\npassword: "
+            android:textSize="20dp"
+            android:textColor="@color/Gold">
+        </TextView>
+
+
+        <EditText
+            android:id="@+id/forgot_confirm_edt"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:inputType="textPassword"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:hint="Enter Password Here">
+        </EditText>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/forgot_forgotPassword_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Forgot Password"
+            android:textSize="18sp"
+            android:backgroundTint="@color/Cardinal"
+            android:textColor="@color/Gold">
+        </Button>
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+

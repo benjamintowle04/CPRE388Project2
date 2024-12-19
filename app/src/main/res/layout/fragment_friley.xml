@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MyHealth.FrileyFragment"
+    android:orientation="vertical"
+    android:background="@color/navy">
+
+
+    <FrameLayout
+        android:id="@+id/contentFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="60dp" />
+
+
+    <TextView
+        android:id="@+id/text_MyFitness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/friley_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Friley Windows"
+        android:textColor="@color/Gold"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/contentFragment"
+        tools:ignore="MissingConstraints"></TextView>
+
+
+    <Button
+        android:id="@+id/friley_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Cardinal"
+        android:textColor="@color/Gold"
+        android:text="Menu"
+        app:layout_constraintBottom_toTopOf="@+id/listView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/friley_msg"
+        tools:ignore="MissingConstraints" />
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="407dp"
+        android:layout_height="220dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_MyFitness"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/friley_msg"
+        tools:ignore="MissingConstraints"></ListView>
+
+
+    <TextView
+        android:id="@+id/reqMeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request: "
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mealRequest"
+        app:layout_constraintEnd_toStartOf="@+id/friley_delete_meal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mealRequest"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/mealRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:hint="Enter What Meal You'd Like"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/friley_request_meal"
+        app:layout_constraintStart_toEndOf="@+id/reqMeal" />
+
+
+
+
+    <Button
+        android:id="@+id/friley_request_meal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Cardinal"
+        android:text="Request Meal"
+        android:textColor="@color/Gold"
+        app:layout_constraintBottom_toBottomOf="@+id/contentFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_MyFitness"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/changeMeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change: "
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_MyFitness"
+        app:layout_constraintEnd_toEndOf="@+id/reqMeal"
+        app:layout_constraintTop_toTopOf="@+id/mealChange"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/changeMeal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To: "
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/friley_change_meal"
+        app:layout_constraintEnd_toEndOf="@+id/reqMeal"
+        app:layout_constraintTop_toTopOf="@+id/mealChange1"></TextView>
+
+
+    <EditText
+        android:id="@+id/mealChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:hint="Enter Meal You'd Like Changed"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/text_MyFitness"
+        app:layout_constraintStart_toEndOf="@+id/changeMeal">
+
+
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/mealChange1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:hint="What Would You Like Instead"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/friley_change_meal"
+        app:layout_constraintStart_toStartOf="@+id/friley_msg">
+
+
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/mealUnrequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:hint="Enter Meal You'd Like Removed"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/friley_delete_meal"
+        app:layout_constraintStart_toEndOf="@+id/unreqMeal" />
+
+
+    <Button
+        android:id="@+id/friley_change_meal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Cardinal"
+        android:text="Change Meal"
+        android:textColor="@color/Gold"
+        app:layout_constraintBottom_toTopOf="@+id/friley_request_meal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_MyFitness"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/unreqMeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete: "
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mealUnrequest"
+        app:layout_constraintEnd_toEndOf="@+id/reqMeal"
+        app:layout_constraintTop_toTopOf="@+id/mealUnrequest" />
+
+
+    <Button
+        android:id="@+id/friley_delete_meal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Cardinal"
+        android:text="Unrequest Meal"
+        android:textColor="@color/Gold"
+        app:layout_constraintBottom_toTopOf="@+id/friley_back_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/friley_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Back"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/msgResponse"-->
+    <!--        android:layout_width="fill_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="25dp"-->
+    <!--        android:text="" />-->
+
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+    </com.google.android.material.chip.ChipGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

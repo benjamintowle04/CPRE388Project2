@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">GetFit</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">netid@iastate.edu</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string-array name="motivational_quotes">
+        <item>Believe in yourself! You are stronger than you think.</item>
+        <item>Push yourself, because no one else is going to do it for you.</item>
+        <item>Great things never come from comfort zones.</item>
+        <item>Your only limit is you.</item>
+        <item>Success starts with self-discipline.</item>
+    </string-array>
+
+    <string-array name="intensity_levels">
+        <item>Beginner</item>
+        <item>Moderate</item>
+        <item>Hard-core</item>
+    </string-array>
+
+    <!-- Array for exercise types (Cardio, Strength) -->
+    <string-array name="exercise_types">
+        <item>Cardio</item>
+        <item>Strength</item>
+    </string-array>
+
+    <!-- Array for difficulty levels (Easy, Medium, Hard) -->
+    <string-array name="difficulty_levels">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+</resources>

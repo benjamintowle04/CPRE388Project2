@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MyHealth.MyFitnessFragment"
+    android:background="@color/navy">
+
+
+    <FrameLayout
+        android:id="@+id/contentFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="60dp"/>
+
+
+
+
+    <TextView
+        android:id="@+id/text_MyFitness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/myfitness_msg_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Let's Get Started"
+        android:textColor="@color/Gold"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/contentFragment"
+        tools:ignore="MissingConstraints"></TextView>
+
+
+    <TextView
+        android:id="@+id/myfitness_weight_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight: "
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fitness_userweight_edt"
+        app:layout_constraintEnd_toStartOf="@+id/fitness_userweight_edt"
+        app:layout_constraintTop_toTopOf="@+id/fitness_userweight_edt">
+
+
+    </TextView>
+
+
+    <EditText
+        android:id="@+id/fitness_userheight_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:hint="Enter Your Height Here"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/fitness_userweight_edt"
+        app:layout_constraintStart_toEndOf="@+id/myfitness_weight_txt"
+        app:layout_constraintTop_toBottomOf="@+id/myfitness_msg_txt"></EditText>
+
+
+    <Button
+        android:id="@+id/fitness_submit_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/Cardinal"
+        android:text="Submit"
+        android:textColor="@color/Gold"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_MyFitness"></Button>
+
+
+    <EditText
+        android:id="@+id/fitness_userweight_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:hint="Enter Your Weight Here"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/fitness_submit_btn"
+        app:layout_constraintEnd_toEndOf="@+id/text_MyFitness"
+        app:layout_constraintStart_toStartOf="@+id/myfitness_msg_txt"
+        app:layout_constraintTop_toBottomOf="@+id/myfitness_msg_txt"></EditText>
+
+
+    <EditText
+        android:id="@+id/fitness_targetweight_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:hint="Enter Target Weight Here"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/fitness_submit_btn"
+        app:layout_constraintStart_toEndOf="@+id/myfitness_weight_txt"
+        app:layout_constraintTop_toBottomOf="@+id/fitness_userweight_edt"></EditText>
+
+
+    <TextView
+        android:id="@+id/myfitness_tweight_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="70sp"
+        android:text="Target\nWeight: "
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fitness_targetweight_edt"
+        app:layout_constraintEnd_toStartOf="@+id/fitness_targetweight_edt"
+        app:layout_constraintTop_toTopOf="@+id/fitness_targetweight_edt"
+        app:layout_constraintVertical_bias="0.0"></TextView>
+
+
+    <TextView
+        android:id="@+id/myfitness_height_txt"
+        android:layout_width="67dp"
+        android:layout_height="29dp"
+        android:text="Height: "
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fitness_userheight_edt"
+        app:layout_constraintEnd_toStartOf="@+id/fitness_userheight_edt"
+        app:layout_constraintTop_toTopOf="@+id/fitness_userheight_edt"></TextView>
+
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+    </com.google.android.material.chip.ChipGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

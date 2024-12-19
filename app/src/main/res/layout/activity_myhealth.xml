@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MyHealth.MyHealthScreen"
+    android:orientation="vertical"
+    android:background="@color/navy">
+
+    <!-- User Greeting TextView -->
+
+    <!-- Motivational Quote TextView -->
+
+    <!-- Fitness Button -->
+
+    <TextView
+        android:id="@+id/greeting_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello User"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/motivational_quote_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/motivational_quote_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Believe in yourself! You are stronger than you think."
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/myhealth_myfitness_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greeting_text"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/userIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/circular_background"
+        android:contentDescription="User Icon"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/myhealth_myfitness_btn"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="MyFitness"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/motivational_quote_text"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Dining Button -->
+    <Button
+        android:id="@+id/myhealth_mydining_btn"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="MyDining"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/signout_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myhealth_myfitness_btn"
+        tools:ignore="MissingConstraints" />
+
+    <!-- SignOut Button -->
+    <Button
+        android:id="@+id/signout_button"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Out"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Check-In Button (Circular with Checkmark) -->
+
+    <ImageButton
+        android:id="@+id/check_in_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/circular_background"
+        android:contentDescription="Check-In"
+        android:src="@drawable/ic_checkmark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Total Points TextView -->
+
+    <TextView
+        android:id="@+id/points_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Points: 0"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_in_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
